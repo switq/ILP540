@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - HTML - Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form id="form03" name="form03" method="post" enctype="text/plain" action="mailto:guilhermerodrigues01102003@gmail.com">
+        <fieldset id="dados">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" size="50" minlength="3" maxlength="50" required="required" autofocus placeholder="seu nome" autocomplete="off">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" size="50" minlength="3" maxlength="50" required="required" autofocus placeholder="seu e-mail">
+            </p>
+            <p>
+                <label for="ender">Idade:</label>
+                <input id="idade" name="idade" type="number" min="18" max="72" required>
+            </p>
+            <p>
+                <label for="escola">Escola:</label>
+                <input id="escola" name="escola" value="Fatec-Sp" type="text">
+            </p>
+        </fieldset>
+        
+        <fieldset id="grau">
+            <legend>Escolaridade</legend>
+                <p>
+                    <input id="fun" name="escolaridade" type="radio" value="fundamental" required="required"/>
+                    <label for="fun">Fundamental</label>
+
+                    <input id="med" name="escolaridade" type="radio" value="ensino medio" checked/>
+                    <label for="med">Ensino Médio</label>
+
+                    <input id="sup" type="radio" name="escolaridade" value="superior" required>
+                    <label for="sup">Superior</label>
+
+                    <input id="pos" type="radio" name="escolaridade" value="pos-graduacao">
+                    <label for="pos">Pós-graduação</label>
+                </p>
+        </fieldset> 
+
+        <fieldset id="area">
+            <legend>Área de Interesse:</legend>
+            <p>
+                <input type="checkbox" name="adm" id="administracao" value="on">
+                <label for="adm">Estoque</label>
+
+                <input id="fin" name="financas" type="checkbox" value="on">
+                <label for="fin">Finanças</label>
+
+                <input id="mkt" name="market" type="checkbox" value="on">
+                <label for="mkt">Marketing</label>
+
+                <input id="vnd" name="vendas" type="checkbox" value="on">
+                <label for="vnd">Vendas</label>
+            </p>
+        </fieldset>
+
+        <fieldset id="credenciais">
+            <legend>Credenciais</legend>
+                <p>
+                    <label for="cartao">Cor do Cartão</label>
+                    <input id="cartao" name="cartao" type="color" required="required"/>
+                    
+                </p>
+
+                <p>
+                    <label for="senha">Senha padrão:</label>
+                    <input id="senha" name="senha" type="password" minlength="6" maxlength="8" size="12" required="required">
+                </p>
+
+                <p>
+                    <label for="dia">Entrevista dia:</label>
+                    <input id="dia" name="dia" type="date" minlength="6" maxlength="8" size="12" required="required">
+                </p>
+
+                <p>
+                    <label for="renda">Renda:</label>
+                    <input id="renda" name="renda" type="number" min="0" max="40000" step="200">
+                </p>
+        </fieldset>
+
+        <fieldset id="info">
+            <legend>Outras informações</legend>
+            <p>
+                <label for="site">Site</label>
+                <input id="site" name="site" type="url" value="https://">
+            </p>
+            <p>
+                <label for="semana">Dia</label>
+                <input type="week" name="semana" id="semana">
+            </p>
+            <p>
+                <label for="mes">Mês</label>
+                <input type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="pesq">Pesquisa</label>
+                <input id="pesq" name="pesq" type="search">
+            </p>
+            <p>
+                <label for="art">Arquivo</label>
+                <input id="art" name="art" type="file">
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input id="tel" name="tel" type="tel">
+                <select name="opcao" id="opcao">
+                    <option value="verde">Verde</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="azul">Azul</option>
+                    <optgroup>
+                        <option value="amarelo">Amarelo</option>
+                        <option value="magenta">Magenta</option>
+                        <option value="acre">Acre</option>
+                    </optgroup>
+                </select>
+                <select name="opcao" id="opcao" multiple="2">
+                    <option value="verde">Verde</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="azul">Azul</option>
+                    <optgroup>
+                        <option value="amarelo">Amarelo</option>
+                        <option value="magenta">Magenta</option>
+                        <option value="acre">Acre</option>
+                    </optgroup>
+                </select>
+        
+            </p>
+            <p>
+                <label for="coment">Comentários:</label><br>
+                <textarea name="coment" id="coment" cols="50" rows="4" maxlength="200" placeholder="Digite seu comentário..."></textarea>
+            </p>
+            <p>
+                <label for="contrato">Contrato</label><br>
+                <textarea name="contrato" id="contrato cols="50" rows="4" maxlength="200" readonly>SÓ OLHA OTÁRIO|</textarea>
+            </p>
+            <p>
+                <label for="barra">Barra</label>
+                <input id="barra" name="barra" type="range" min="5" max="10" step="0.5">
+            </p>
+            <p>
+                <input list="browsers" name="brow">
+
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+            </p>
+        </fieldset>
+        <input id="bt_limpar" type="reset" value="Limpar">
+        <input id="bt_enviar" type="submit" value="Enviar" formaction="mailto:guilhermerodrigues01102003@gmail.com">
+
+        <button>
+            <img src="../2023-02-24/imgs/passaro.png" alt="">
+            Aperte o meu botao
+        </button>
+    </form>
+    <a href="mailto:guilhermerodrigues01102003@gmail.com">Email</a>
+</body>
+</html>
