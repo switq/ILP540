@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap');
+
+p {
+    color: green;
+}
+
+p {
+    color:blueviolet;
+}
+
+#texto p {
+    color: blue;
+}
+
+.fontes > :nth-child(2) {
+    font-size: 1.5em;
+    color: limegreen;
+    /* font-variant: small-caps; */
+    font-family: 'Noto Sans Mono';
+    text-align: center;
+    text-decoration: underline overline line-through;
+    text-transform: uppercase;
+}
+
+.fontes > :nth-child(3) {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.295);
+    color: hsl(293, 66%, 47%);
+
+}
+
+.fontes > :nth-child(4) {
+    font-size: 16px;
+    line-height: 2;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-align: justify;
+}
+
+#cachorro {
+    transition: all 0.5s;
+
+}
+
+#cachorro:hover {
+    width: 400px;
+    height: 100px;
+    
+}
+
+#video iframe {
+    position: absolute;
+    max-width: 300px;
+    width: 80vw;
+}
