@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+    /* background-color: #201b29;
+    background-image: url(assets/depositphotos_15645943-stock-photo-generic-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+
+    background: #bce1ff url(assets/depositphotos_15645943-stock-photo-generic-background.jpg) fixed top center/cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pelicula {
+    max-width: 600px;
+    color: black;
+    /* background-color: rgba(255, 255, 255, 0.631); */
+    background-image: linear-gradient(to bottom, #7bbfa4, #9191f940);
+    margin: 15px 10px;
+    padding: 3% 2%;
+    border: solid 2px #f535cf59;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+@media(max-width: 960px) {
+    body {
+        background-image: url(assets/depositphotos_15645943-stock-photo-generic-background-mobile.jpg);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .pelicula {
+        background-image: linear-gradient(#bf7bb1, #9191f940);
+    }
+}

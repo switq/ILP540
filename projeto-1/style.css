@@ -1,0 +1,39 @@
+:root {
+    --magenta: #ee00ff;
+    --dark01: #1a1a1a;
+    --dark02: #1a1a1ab7;
+    --light: #ffffff;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: #666;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    padding: 1em;
+    box-shadow: 2px 2px 9px 2px var(--dark02) ;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark01);
+}
+
+nav a:hover {
+    color: var(--magenta);
+}
+
