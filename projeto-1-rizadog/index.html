@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Riza Dog</title>
+</head>
+<body>
+
+    <section id="mapa" class="mapatoggle" onclick="fechaMapa()">
+        <a id="fecha" class="fechaMapa" href="" onclick="closeMenu()"><ion-icon name="close-circle-outline"></ion-icon></a>
+        <div class="tituloH2">
+            <h2>Localização</h2>
+            <p>Venha nos visitar!</p>
+        </div>
+        <div class="mapinha">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.59854923977!2d-46.6230673382504!3d-23.47494105833641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef74b91cd67bb%3A0xf04f3a562607d662!2sRisadog!5e0!3m2!1spt-BR!2sbr!4v1681439493857!5m2!1spt-BR!2sbr"
+                width="300" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>Endereço: Rua Manuel Alexandre, 6 A – Vila Aurora, São Paulo, SP – CEP 02410-100</p>
+        <div class="video">
+            <iframe width="300" height="200px" src="https://www.youtube-nocookie.com/embed/235TLG2wFX4?controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    
+        <div class="audio">
+            <audio controls src="assets/Dog_Park_-_Silent_Partner.mp3">
+                Seu navegador não pode reproduzir esta mídia.
+            </audio>
+        </div>
+    </section>
+
+    <header>
+        <a class="logo" href="#"><img src="assets/risadog-logo-300x130.png" alt=" logo risa dog"></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="whatsappContainer">
+            <ion-icon name="logo-whatsapp"></ion-icon> <span>11 9 6737-0353
+</span>
+        </div>
+        <div class="menu-toggle">
+            <a href="" onclick="clickMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+    </header>
+
+    <div id="itens" class="nav-toggle">
+        <ul>
+            <li><a id="fecha"  href="" onclick="closeMenu()"><ion-icon name="close-circle-outline"></ion-icon></a></li>
+            <li><a class="itemNav" href="#home" onclick="itemMenu()">Home</a></li>
+            <li><a class="itemNav" href="#sobre" onclick="itemMenu()">Sobre</a></li>
+            <li><a class="itemNav" href="#avaliacoes" onclick="itemMenu()">Avaliações</a></li>
+            <li><a class="itemNav" href="#servicos" onclick="itemMenu()">Serviços</a></li>
+            <li><a class="itemNav" href="#contato" onclick="itemMenu()">Contato</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <section id="home" class="tittle">
+            <div class="left">
+                <h1>O LUGAR<br><span class="rosaDestaque">DO SEU PET</span></h1>
+                <p>Aqui no Risadog buscamos trazer a experiência real de cuidar com amor e carinho entregando com o estilo que seU pet precisa!</p>
+                <div class="osso">
+                    <span></span>
+                    <img src="assets/mini-bone.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/dog1-full.png" alt="">
+            </div>
+        </section>
+
+        <section class="waves">
+            <div class="wave" id="wave1">
+                <div class="wave" id="wave2">
+                    <div class="wave" id="wave3"></div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="about">
+            <div class="left">
+                <img src="assets/cat2-full.png" alt="">
+            </div>
+            <div class="right">
+                <h2>Sobre Nós</h2>
+                <p>Temos como visão principal o cuidado e bem-estar dos animais de estimação. Isso inclui desde a escolha cuidadosa dos produtos oferecidos, até a contratação de profissionais qualificados e engajados em proporcionar uma experiência positiva para os clientes e seus pets.</p>
+                <div class="osso">
+                    <span></span>
+                    <img src="assets/mini-bone-white.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section class="waves">
+            <div class="wave waveB" id="waveR1">
+                <div class="wave waveB" id="waveR2">
+                    <div class="wave waveB" id="waveR3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="assessment">
+            <div class="tituloH2">
+                <h2>Avaliações</h2>
+                <p>Veja o que nosos clientes acham</p>
+            </div>
+            <article class="depoimentos">
+                <div class="depItem">
+                    <img src="assets/pfps/gui.png" alt="">
+                    <p class="nomeDestaque">Guilherme Rodrigo</p>
+                    <p>Visitei o espaço semana passada e foi incrível! Comprei alguns produtos que estavam faltando em casa para cuidar da
+                    Lola. Consegui tudo que precisava, me salvou demaaaaaais. Muito obrigado! 🐶</p>
+                    <img src="assets/starzinho.png" alt="">
+                </div>
+                <div class="depItem">
+                    <img src="assets/pfps/lua.png" alt="">
+                    <p class="nomeDestaque">Luana Belunga</p>
+                    <p>Agendei meu horário pelo WhatsApp e fui atendida rapidinho! Meus gatos estavam precisando realizar corte de unhas e
+                    geralmente levam uma eternidade para fazer porque eles detestam, mas a Larissa fez com que eles ficassem calmos e
+                    resolveu meu problema em minutos. Super indico! 💜</p>
+                    <img src="assets/starzinho.png" alt="">
+                </div>
+                <div class="depItem">
+                    <img src="assets/pfps/luan.png" alt="">
+                    <p class="nomeDestaque">Luan Limões</p>
+                    <p>Foi uma experiência muito agradável visitar o Risadog. Atendimento de qualidade e os serviços excelentes. Preço justo e boa localização. Meus gatinhos amaram as funcionárias 😻</p>
+                    <img src="assets/starzinho.png" alt="">
+                </div>
+            </article>
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="wrapper-services">
+                <div class="tituloH2">
+                    <h2>Serviços</h2>
+                    <p>Confira nossas opções de serviços!</p>
+                </div>
+                <div class="cartoes">
+                    <div class="card">
+                        <img src="assets/noun-dog-bath.png" alt="">
+                        <h3>Banho</h3>
+                        <ul>
+                            <li>Hidratação</li>
+                            <li>Revitalização dos pelos</li>
+                            <li>Corte de Unhas</li>
+                            <li>Massagem & Relaxamento</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="assets/noun-dog-grooming.png" alt="">
+                        <h3>Tosa</h3>
+                        <ul>
+                            <li>Técnicas de trimming</li>
+                            <li>Tosa na tesoura, na máquina e higiênica</li>
+                            <li>Estilização de pelagem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="tituloH2">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco!</p>
+            </div>
+            <article class="formulario-contato">
+                <form action="contato.php" method="post" autocomplete="off">
+                    <div><label for="inome">Nome:</label>
+                        <input id="inome" name="nome" type="text" maxlength="25" minlength="2" placeholder="Digite o seu nome :)"
+                            required>
+                    </div>
+            
+                    <div><label for="ipet">Pet:</label>
+                        <input id="ipet" name="pet" type="text" maxlength="25" minlength="2"
+                            placeholder="Agora, digite o nome do seu pet!" required>
+                    </div>
+            
+                    <div><label for="iemail">E-mail:</label>
+                        <input id="iemail" name="email" type="email" maxlength="50" placeholder="Coloque o seu e-mail!" required>
+                    </div>
+            
+                    <div><label for="icelular">Celular:</label>
+                        <input id="icelular" name="celular" type="tel" maxlength="11" placeholder="E o seu celular ^^ (com o DDD)"
+                            required>
+                    </div>
+            
+                    <div><label for="imensagem">Mensagem:</label>
+                        <textarea id="imensagem" name="mensagem" cols="30" rows="10" maxlength="360"
+                            placeholder="Como podemos te ajudar?" required></textarea padrão="[]"> </div>
+            
+                        <div><input class="botao" type="submit" value="Enviar"></div>    
+                    </form>
+            </article>
+        </section>
+
+    </div>
+
+    <footer>
+        <a class="logo" href="#"><img src="assets/risadog-logo-white-300x130.png" alt=""></a>
+        <a id="map" href="" onclick="abreMapa()"><ion-icon name="location-outline"></ion-icon>Mapa</a>
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/risadog_/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/risaadog" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://github.com/switq" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </footer>
+
+    
+
+</body>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Vip</title>
+    <style>
+        body {
+            display: flex;
+            gap: 8em;
+            text-align: center;
+            padding: 100px;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+        }
+        ul {
+            text-align: left;
+        }
+        .lista {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Organizador</h1>
+        <label for="ent">Insira um nome</label>
+        <div>
+            <input campo name="ent" type="text">
+            <button id="envio">Enviar</button>  
+        </div>
+        <ul id="lista"></ul>
+    </div>
+    <div class="lista">
+        <h1>Lista VIP</h1>
+        <label for="ent">Insira nomes (separe por ',')</label>
+        <textarea campo2 name="" id="" cols="30" rows="10"></textarea>
+        <button id="envio2">Enviar</button>  
+        
+        <ul id="lista2"></ul>
+    </div>
+
+    <script>
+        let ln = []
+        let lst = document.getElementById('lista')
+
+        document.getElementById('envio').addEventListener("click", _ => {
+            lst.innerHTML = ''
+            const campo = document.querySelector('[campo]')
+            let valor = campo.value.toUpperCase()
+            campo.value = ''
+            ln.push(valor)
+            ln = ln.sort()
+            ln.forEach(v => lst.innerHTML += `<li>${v}</li>`)
+        })
+
+        let lst2 = document.getElementById('lista2')
+
+        document.getElementById('envio2').addEventListener("click", _ => {
+            lst2.innerHTML = ''
+            const campo = document.querySelector('[campo2]')
+            let valor = campo.value.toUpperCase().split(',')
+            valor.forEach((v, i) => valor[i] = v.trim())
+            valor = valor.sort()
+            valor.forEach(v => lst2.innerHTML += `<li>${v}</li>`)
+        })
+
+        
+    </script>
+</body>
+</html>
